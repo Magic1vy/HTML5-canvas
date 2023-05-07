@@ -7,11 +7,33 @@
     <title>HTML5 Canvas</title>
     <link rel="icon" href="https://fav.farm/🔥" />
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
 </head>
 <body>
-    <main>
+<main>
+    <section>
         <canvas id="draw" width="800" ></canvas>
-    </main>
+    </section>
+    <section id="controls">
+        <p>Pick your own:</p>
+    <div class="container">
+        <label>
+        <input type="checkbox" id="use-custom-color">Color</label>
+        <label>
+        <input type="checkbox" id="use-custom-size">Size</label>
+    </div>
+    <div class="container">
+        <input type="color" id="color-picker" value="#00FFFB">
+        <input type="range" id="brush-size" min="1" max="50" value="10">
+    </div>
+    <div class="container">
+        <label for="bg-color-picker">Background color:</label>
+    <input type="color" id="bg-color-picker" value="#FFFFFF">
+    </div>
+    </section>
+</main>
 <script src="script.js"></script>
 </body>
 </html>
