@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+}
+
+@media all and (max-width: 799px) {
+    #draw{
+        width: 100%;
+        height: 100%;
+    }
+}
